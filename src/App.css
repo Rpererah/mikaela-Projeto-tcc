@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Material+Icons+Round");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+    height: 100vh;
+    min-width: 1024px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.conteiner {
+    max-width: 1280px;
+    margin: auto;
+    height: 3rem;
+    position: relative;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-.App-link {
-  color: #61dafb;
+header {
+    width: 100%;
+    position: fixed;
+    background-color: #3b3c41;
+    font-size: larger;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header ul {
+    list-style-type: none;
 }
+
+header ul li {
+    display: inline;
+    margin: 0 40px;
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header ul li a .txt-link{
+    position: absolute;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+header ul li a .icon > i{
+    font-size: 35px;
+    margin-left: 4px;
+    line-height: 80px;
+}
+
+.btn-suporte button {
+    width: 120px;
+    height: 40px;
+    border-radius: 1rem;
+    background-color: #985BC6;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.btn-suporte button:hover {
+    background-color: #762fac;
+}
+
+img {
+    height: 4rem;
+    width: 4rem;
+    display: inline-block;
+}
+
+/* @media screen and (max-width: 1020px){
+    .flex{
+        flex-direction: column-reverse;
+    }
+    .menu-desktop, .btn-suporte{
+        display: none;
+    }
+} */
